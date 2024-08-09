@@ -53,12 +53,11 @@ class PayrollSystem{
    public PayrollSystem(){
        employeeList = new ArrayList<>();
    }
-// add
-    public void addEmployee(Employee employee){
+
+   public void addEmployee(Employee employee){
        employeeList.add(employee);
-    }
-// remove
-    public void removeEmployee(int id){
+   }
+   public void removeEmployee(int id){
        Employee employeeToRemove = null;
        for(Employee employee : employeeList){
             if(employee.getId() == id){
@@ -69,12 +68,12 @@ class PayrollSystem{
        if(employeeToRemove != null){
            employeeList.remove(employeeToRemove);
        }
-    }
-    public void displayDetails(){
+   }
+   public void displayDetails(){
        for(Employee employee : employeeList){
            System.out.print(employee);
        }
-    }
+   }
 }
 
 public class Main {
